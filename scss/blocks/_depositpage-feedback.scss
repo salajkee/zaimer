@@ -1,0 +1,117 @@
+.depositpage .feedback {
+	width: 100%;
+	padding: 76px 0;
+	background: url('../images/deposit/feedback_bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__inner {
+		max-width: 980px;
+		margin: 0 auto;
+		padding: 56px 15px;
+		background-color: $white;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 1.6;
+		color: $title;
+		text-align: center;
+	}
+
+	&__subtitle {
+		margin-top: 20px;
+		font-size: 16px;
+		line-height: 1.6;
+		color: $text;
+		text-align: center;
+	}
+
+	&__form {
+		max-width: 404px;
+		margin: 30px auto 0;
+
+		&-item {
+			position: relative;
+			&:not(:first-child) {
+				margin-top: 30px;
+			}
+
+			span {
+				padding: 0 10px;
+				position: absolute;
+				top: -9.6px;
+				left: 10px;
+				font-size: 14px;
+				color: $text;
+				background: #f8f8f8;
+			}
+		}
+
+		&-input {
+			width: 100%;
+			height: 60px;
+			padding: 0 20px;
+			border: 1px solid #606060;
+		}
+
+		&-select {
+			width: 100%;
+			height: 60px;
+			padding: 0 20px;
+			border: 1px solid #606060;
+		}
+
+		&-btn {
+			margin-top: 30px;
+			width: 100%;
+			height: 60px;
+			font-size: 16px;
+			font-weight: 700;
+			color: #fcfbf9;
+			background-color: $primary;
+			transition: all 0.2s linear;
+			border: 2px solid $primary;
+
+			&:hover {
+				color: $primary;
+				background-color: $white;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.depositpage .feedback {
+		padding: 0;
+
+		.container {
+			padding: 0;
+		}
+
+		&__inner {
+			max-width: 100%;
+			width: 100%;
+			padding: 50px 15px;
+		}
+
+		&__title {
+			font-size: 26px;
+		}
+
+		&__subtitle {
+			margin-top: 10px;
+			font-size: 14px;
+		}
+
+		&__form {
+			&-input,
+			&-select,
+			&-btn {
+				font-size: 14px;
+			}
+		}
+	}
+}

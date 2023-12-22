@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__wrapper">
+						<a href="#" class="header__logo">
+							<img src="./images/header/logo.png" alt="logo" />
+						</a>
+
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="#" class="nav__link">Кредит онлайн</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Кредит под залог авто</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Автокредит</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Авто в рассрочку</a>
+								</li>
+							</ul>
+						</nav>
+
+						<div class="header__lang">
+							<a href="#" class="header__lang-item active">Ru</a>
+							<a href="#" class="header__lang-item">Uz</a>
+						</div>
+
+						<div class="hamburger">
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main class="main otherpage selectionpage">
+				<div class="breadcrumbs">
+					<div class="container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__link">
+								<a href="#">Главная</a>
+							</li>
+							<li class="breadcrumbs__link">
+								<span>Подобрать кредит</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<section class="selection">
+					<div class="container">
+						<div class="selection__wrapper">
+							<div class="selection__filter">
+								<h1 class="selection__filter-title">Подобрать кредит</h1>
+								<div class="selection__filter-form form">
+									<div class="form__item">
+										<span>Вид кредита</span>
+										<select class="form__item-select">
+											<option value="default" selected disabled>
+												Выбор кредита
+											</option>
+											<option value="Любой">Любой</option>
+											<option value="Микрокредит">Микрокредит</option>
+											<option value="Автокредит">Автокредит</option>
+											<option value="Кредит под залог">Кредит под залог</option>
+										</select>
+									</div>
+									<div class="form__item">
+										<span>Сумма, сум</span>
+										<input
+											class="form__item-input"
+											type="text"
+											placeholder="0"
+										/>
+									</div>
+									<div class="form__item">
+										<span>Срок</span>
+										<input
+											class="form__item-input"
+											type="number"
+											placeholder="365"
+										/>
+										<select class="form__item-select">
+											<option value="дней">Дней</option>
+											<option value="недель">Недель</option>
+											<option value="месяцев">Месяцев</option>
+										</select>
+									</div>
+									<div class="form__item">
+										<span>Город</span>
+										<select class="form__item-select">
+											<option value="default" selected disabled>
+												Выберите город
+											</option>
+											<option value="tashkent">Ташкент</option>
+											<option value="nukus">Нукус</option>
+											<option value="andijan">Андижан</option>
+											<option value="buxara">Бухара</option>
+											<option value="djizak">Джизак</option>
+											<option value="karshi">Карши</option>
+											<option value="navoi">Навои</option>
+											<option value="samarkand">Самарканд</option>
+											<option value="termez">Термез</option>
+											<option value="gulistan">Гулистан</option>
+											<option value="nurafshan">Нурафшан</option>
+											<option value="fergana">Фергана</option>
+											<option value="urgench">Ургенч</option>
+										</select>
+									</div>
+									<div class="form__item">
+										<span>Залог</span>
+										<select class="form__item-select">
+											<option value="default" selected disabled>
+												Без залога
+											</option>
+											<option value="avtomobil">Автомобиль</option>
+											<option value="kvartira">Квартира</option>
+											<option value="jiloydom">Жилой дом</option>
+											<option value="zemelniyuchastok">
+												Земельный участок
+											</option>
+											<option value="zoloto">Золото</option>
+											<option value="prochee">Прочее</option>
+										</select>
+									</div>
+									<button class="form__btn">Подобрать кредит</button>
+								</div>
+							</div>
+							<div class="selection__content">
+								<div class="selection__calc calc">
+									<div class="calc__top">
+										<h2 class="calc__title">
+											Рассчитайте проценты (%) в калькуляторе
+										</h2>
+										<svg>
+											<use xlink:href="./sprite.svg#arrow-bot"></use>
+										</svg>
+									</div>
+									<div class="calc__content">
+										<h3 class="calc__subtitle">Расчет переплаты</h3>
+										<div class="calc__form">
+											<div class="calc__form-item">
+												<span>Сумма займа, сум</span>
+												<input
+													class="calc__form-item-input"
+													type="text"
+													placeholder="0"
+												/>
+											</div>
+											<div class="calc__form-item">
+												<span>Срок</span>
+												<div class="calc__form-item-inner">
+													<input type="text" placeholder="365" />
+													<select>
+														<option value="дней">Дней</option>
+														<option value="недель">Недель</option>
+														<option value="месяцев">Месяцев</option>
+													</select>
+												</div>
+											</div>
+											<div class="calc__form-item">
+												<span>Процент в год</span>
+												<input
+													class="calc__form-item-input"
+													type="number"
+													placeholder="20"
+												/>
+											</div>
+											<button class="calc__form-btn">Рассчитать</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="selection__offer offer">
+									<div class="offer__item">
+										<div class="offer__item-img">
+											<img src="./images/selection/clevermfo.png" alt="logo" />
+										</div>
+										<div class="offer__item-name">
+											CleverMoney <span>МКО, лицензия №61</span>
+										</div>
+										<ul class="offer__item-list">
+											<li>
+												<span>Сумма займа, сум:</span> 500 000-50 000 000 сум
+											</li>
+											<li><span>Срок, мес:</span> 3-18</li>
+											<li><span>Переплата, % в год:</span> от 15% в год</li>
+										</ul>
+										<div class="offer__item-btns">
+											<a class="offer__item-link offer__item-btn" href="#">
+												Онлайн-заявка
+											</a>
+											<a class="offer__item-link" href="#">Подробнее</a>
+										</div>
+									</div>
+									<div class="offer__item">
+										<div class="offer__item-img">
+											<img src="./images/selection/adelta.png" alt="logo" />
+										</div>
+										<div class="offer__item-name">
+											ADelta <span>МКО, лицензия №28</span>
+										</div>
+										<ul class="offer__item-list">
+											<li>
+												<span>Сумма займа, сум:</span> 500 000-50 000 000 сум
+											</li>
+											<li><span>Срок, мес:</span> 2-25</li>
+											<li><span>Переплата, % в год:</span> от 20% в год</li>
+										</ul>
+										<div class="offer__item-btns">
+											<a class="offer__item-link offer__item-btn" href="#">
+												Онлайн-заявка
+											</a>
+											<a class="offer__item-link" href="#">Подробнее</a>
+										</div>
+									</div>
+									<div class="offer__item">
+										<div class="offer__item-img">
+											<img src="./images/selection/pulmakon.png" alt="logo" />
+										</div>
+										<div class="offer__item-name">
+											PULMAKON<span>МКО Лицензия №28</span>
+										</div>
+										<ul class="offer__item-list">
+											<li>
+												<span>Сумма займа, сум:</span> 500 000-100 000 000 сум
+											</li>
+											<li><span>Срок, мес:</span> до 18 месяцев</li>
+											<li><span>Переплата, % в год:</span> от 65% в год</li>
+										</ul>
+										<div class="offer__item-btns">
+											<a class="offer__item-link offer__item-btn" href="#">
+												Онлайн-заявка
+											</a>
+											<a class="offer__item-link" href="#">Подробнее</a>
+										</div>
+									</div>
+									<div class="offer__item">
+										<div class="offer__item-img">
+											<img src="./images/selection/bizfin.png" alt="logo" />
+										</div>
+										<div class="offer__item-name">
+											BIZNESS FINANS <span>МКО Лицензия №46</span>
+										</div>
+										<ul class="offer__item-list">
+											<li>
+												<span>Сумма займа, сум:</span> 500 000-300 000 000 сум
+											</li>
+											<li><span>Срок, мес:</span> до 24 месяцев</li>
+											<li><span>Переплата, % в год:</span> от 60% в год</li>
+										</ul>
+										<div class="offer__item-btns">
+											<a class="offer__item-link offer__item-btn" href="#">
+												Онлайн-заявка
+											</a>
+											<a class="offer__item-link" href="#">Подробнее</a>
+										</div>
+									</div>
+									<div class="offer__item">
+										<div class="offer__item-img">
+											<img src="./images/selection/ishonch.png" alt="logo" />
+										</div>
+										<div class="offer__item-name">
+											ISHONCH <span>МКО Лицензия №67</span>
+										</div>
+										<ul class="offer__item-list">
+											<li>
+												<span>Сумма займа, сум:</span> 500 000-300 000 000 сум
+											</li>
+											<li><span>Срок, мес:</span> до 36 месяцев</li>
+											<li><span>Переплата, % в год:</span> от 70% в год</li>
+										</ul>
+										<div class="offer__item-btns">
+											<a class="offer__item-link offer__item-btn" href="#">
+												Онлайн-заявка
+											</a>
+											<a class="offer__item-link" href="#">Подробнее</a>
+										</div>
+									</div>
+									<div class="offer__item">
+										<div class="offer__item-img">
+											<img src="./images/selection/microfin.png" alt="logo" />
+										</div>
+										<div class="offer__item-name">
+											MICROFIN <span>МКО Лицензия №53</span>
+										</div>
+										<ul class="offer__item-list">
+											<li>
+												<span>Сумма займа, сум:</span> 500 000-150 000 000 сум
+											</li>
+											<li><span>Срок, мес:</span> до 24 месяцев</li>
+											<li><span>Переплата, % в год:</span> от 60% в год</li>
+										</ul>
+										<div class="offer__item-btns">
+											<a class="offer__item-link offer__item-btn" href="#">
+												Онлайн-заявка
+											</a>
+											<a class="offer__item-link" href="#">Подробнее</a>
+										</div>
+									</div>
+									<div class="offer__item">
+										<div class="offer__item-img">
+											<img src="./images/selection/cashuuz.png" alt="logo" />
+										</div>
+										<div class="offer__item-name">
+											CashWU <span>МКО Лицензия №62</span>
+										</div>
+										<ul class="offer__item-list">
+											<li>
+												<span>Сумма займа, сум:</span> 500 000-50 000 000 сум
+											</li>
+											<li><span>Срок, мес:</span> 3-24 месяцев</li>
+											<li><span>Переплата, % в год:</span> от 20% в год</li>
+										</ul>
+										<div class="offer__item-btns">
+											<a class="offer__item-link" href="#">Онлайн-заявка</a>
+											<a class="offer__item-link" href="#">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<div class="modal">
+				<div class="modal__bg">
+					<div class="modal__body">
+						<button class="modal__close">
+							<img src="./images/selection/close.svg" alt="close-modal" />
+						</button>
+						<div class="modal__content">
+							<h2 class="modal__title">
+								Отправьте заявку на кредит прямо сейчас
+							</h2>
+							<p class="modal__subtitle">И мы свяжемся с Вами</p>
+							<form class="modal__form" action="#">
+								<div class="modal__form-item">
+									<span>Имя</span>
+									<input class="modal__form-input" type="text" />
+								</div>
+								<div class="modal__form-item">
+									<span>Телефон</span>
+									<input class="modal__form-input" type="text" />
+								</div>
+								<div class="modal__form-item">
+									<span>Сумма</span>
+									<input class="modal__form-input" type="text" />
+								</div>
+								<div class="modal__form-item">
+									<span>Город</span>
+									<select class="modal__form-select">
+										<option value="default" selected disabled>
+											Выберите город
+										</option>
+										<option value="tashkent">Ташкент</option>
+										<option value="nukus">Нукус</option>
+										<option value="andijan">Андижан</option>
+										<option value="buxara">Бухара</option>
+										<option value="djizak">Джизак</option>
+										<option value="karshi">Карши</option>
+										<option value="navoi">Навои</option>
+										<option value="samarkand">Самарканд</option>
+										<option value="termez">Термез</option>
+										<option value="gulistan">Гулистан</option>
+										<option value="nurafshan">Нурафшан</option>
+										<option value="fergana">Фергана</option>
+										<option value="urgench">Ургенч</option>
+									</select>
+								</div>
+								<div class="modal__form-item">
+									<span>Обеспечение</span>
+									<select class="modal__form-select">
+										<option value="default" selected disabled>
+											Обеспечение
+										</option>
+										<option value="bez-obespechenie">Без обечпечение</option>
+										<option value="avtomobil">Автомобиль</option>
+										<option value="noutbuk">Ноутбук</option>
+										<option value="kvartira">Квартира</option>
+										<option value="zoloto">Золото</option>
+										<option value="net-zaloga">Нет залога</option>
+									</select>
+								</div>
+								<button class="modal__form-btn" type="submit">
+									Отправить заявку
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__items">
+						<div class="footer__item">
+							<a href="#" class="footer__logo">
+								<img src="./images/header/logo.png" alt="logo" />
+							</a>
+							<span class="footer__copyright"> ©2022 Все права защищены </span>
+						</div>
+						<div class="footer__item">
+							<nav class="footer__nav">
+								<ul class="footer__nav-list">
+									<li>
+										<a class="footer__nav-link" href="#">О нас</a>
+									</li>
+									<li>
+										<a class="footer__nav-link" href="#">Полезное</a>
+									</li>
+									<li>
+										<a class="footer__nav-link" href="#">Вопрос-Ответ</a>
+									</li>
+									<li>
+										<a class="footer__nav-link" href="#">Калькуляторы</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__item">
+							<div class="footer__tel">
+								Телефон: <br />
+								<a href="tel:+712002004">+71-200-20-04</a>
+							</div>
+							<div class="footer__address">
+								<span>Адрес:</span> г. Ташкент, ул. Садыка Азимова, 68
+							</div>
+						</div>
+						<div class="footer__item">
+							<a class="footer__policy" href="#">
+								Политика обработки персональных данных
+							</a>
+							<a class="footer__agreement" href="#">
+								Пользовательское соглашение
+							</a>
+						</div>
+						<div class="footer__item">
+							<div class="footer__lang">
+								<a href="#" class="footer__lang-item active">Ru</a>
+								<a href="#" class="footer__lang-item">Uz</a>
+							</div>
+							<div class="footer__age">18+</div>
+						</div>
+					</div>
+					<p class="footer__text">
+						Zaimer.uz не является микрокредитной или кредитной организацией, не
+						выдает займы и не привлекает денежных средств. Информация,
+						размещенная на сайте, носит исключительно ознакомительный характер.
+						Все условия и решения, касающиеся получения займов или кредитов,
+						принимаются непосредственно компаниями, предоставляющими данные
+						услуги
+					</p>
+				</div>
+			</footer>
+		</div>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
