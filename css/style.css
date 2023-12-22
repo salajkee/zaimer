@@ -712,6 +712,9 @@ body {
           appearance: none;
 }
 .homepage .intro__form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 60px;
   font-size: 16px;
   font-weight: 700;
