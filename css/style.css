@@ -1341,6 +1341,25 @@ body {
   color: #00b56a;
   background-color: #ffffff;
 }
+.selectionpage .selection .calc__result {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #323232;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+}
+.selectionpage .selection .calc__result span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #00b56a;
+}
+.selectionpage .selection .calc__result--active {
+  opacity: 1;
+  visibility: visible;
+}
 .selectionpage .selection .offer {
   margin-top: 34px;
 }
@@ -3364,5 +3383,305 @@ body {
   }
   .modal__form-input, .modal__form-select, .modal__form-btn {
     height: 55px;
+  }
+}
+.islampage .intro {
+  padding: 100px 0;
+  background: url("../images/islam/intro_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.islampage .intro__wrapper {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.islampage .intro__title {
+  max-width: 600px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #00b56a;
+}
+.islampage .intro__text {
+  max-width: 645px;
+  margin-top: 36px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #323232;
+}
+
+@media (max-width: 1024px) {
+  .islampage .intro {
+    padding: 50px 0;
+  }
+  .islampage .intro__wrapper {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    row-gap: 20px;
+  }
+  .islampage .intro__img {
+    margin-left: auto;
+  }
+}
+@media (max-width: 768px) {
+  .islampage .intro__title {
+    font-size: 30px;
+  }
+  .islampage .intro__text {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+.islampage .feedback {
+  width: 100%;
+  padding: 75px 0;
+  background: url("../images/islam/feedback-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.islampage .feedback__wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 73px 50px;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+.islampage .feedback__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #575757;
+  text-align: center;
+}
+.islampage .feedback__subtitle {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #323232;
+  text-align: center;
+}
+.islampage .feedback .form {
+  max-width: 404px;
+  margin: 20px auto 0;
+}
+.islampage .feedback .form__item {
+  position: relative;
+}
+.islampage .feedback .form__item:not(:first-child) {
+  margin-top: 30px;
+}
+.islampage .feedback .form__item span {
+  padding: 0 10px;
+  position: absolute;
+  top: -9.6px;
+  left: 10px;
+  font-size: 16px;
+  color: #323232;
+  background: #f8f8f8;
+}
+.islampage .feedback .form__item-input {
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  color: #323232;
+  padding: 0 20px;
+  border: 1px solid #606060;
+}
+.islampage .feedback .form__btn {
+  margin-top: 25px;
+  width: 100%;
+  height: 54px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fcfbf9;
+  background-color: #00b56a;
+  transition: all 0.2s linear;
+  border: 2px solid #00b56a;
+}
+.islampage .feedback .form__btn:hover {
+  color: #00b56a;
+  background-color: #ffffff;
+}
+.islampage .feedback__tel {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #323232;
+  text-align: center;
+}
+.islampage .feedback__tel a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #00b56a;
+}
+
+@media (max-width: 992px) {
+  .islampage .feedback {
+    padding: 0;
+  }
+  .islampage .feedback .container {
+    padding: 0;
+  }
+  .islampage .feedback__wrapper {
+    max-width: 100%;
+    width: 100%;
+    padding: 70px 15px;
+  }
+}
+@media (max-width: 768px) {
+  .islampage .feedback__subtitle {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .islampage .feedback .form__item span {
+    font-size: 14px;
+  }
+  .islampage .feedback .form__item-input {
+    height: 55px;
+  }
+  .islampage .feedback__tel {
+    font-size: 16px;
+  }
+  .islampage .feedback__tel a {
+    font-size: 16px;
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .islampage .feedback__wrapper {
+    padding: 60px 15px;
+  }
+}
+.islampage .howitworks {
+  padding: 100px 0 50px;
+}
+.islampage .howitworks__wrapper {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.islampage .howitworks__content {
+  flex: 1 1 calc(100% - 50px);
+}
+.islampage .howitworks__title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #575757;
+}
+.islampage .howitworks__text {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #323232;
+}
+.islampage .howitworks__img {
+  flex: 1 0 640px;
+}
+
+@media (max-width: 1300px) {
+  .islampage .howitworks__wrapper {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .islampage .howitworks__content {
+    flex: 1 1 calc(100% - 30px);
+  }
+  .islampage .howitworks__img {
+    flex: 1 0 550px;
+  }
+}
+@media (max-width: 1300px) and (max-width: 1200px) {
+  .islampage .howitworks__img {
+    flex: 1 0 500px;
+  }
+}
+@media (max-width: 1024px) {
+  .islampage .howitworks__wrapper {
+    flex-direction: column-reverse;
+    row-gap: 30px;
+  }
+  .islampage .howitworks__text {
+    margin-top: 15px;
+  }
+  .islampage .howitworks__img {
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .islampage .howitworks {
+    padding: 70px 0 50px;
+  }
+  .islampage .howitworks__title {
+    font-size: 26px;
+  }
+  .islampage .howitworks__text {
+    font-size: 14px;
+  }
+}
+.islampage .principles {
+  padding: 50px 0;
+}
+.islampage .principles__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #575757;
+  text-align: center;
+}
+.islampage .principles__items {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 526px);
+  gap: 42px;
+  justify-content: center;
+}
+.islampage .principles__item {
+  padding: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(0px 4px 25px rgba(24, 168, 108, 0.18));
+  background: #ffffff;
+}
+.islampage .principles__item-title {
+  max-width: 410px;
+  margin: 25px auto 0;
+  font-size: 20px;
+  color: #323232;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .islampage .principles__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .islampage .principles__items {
+    gap: 20px;
+  }
+  .islampage .principles__item {
+    padding: 30px 20px;
+  }
+  .islampage .principles__item-icon {
+    width: 55px;
+  }
+  .islampage .principles__item-title {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .islampage .principles__title {
+    font-size: 26px;
+  }
+  .islampage .principles__items {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=style.css.map */

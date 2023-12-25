@@ -88,7 +88,9 @@
 									перезвонят Вам. Самые выгодные условия для наших клиентов –
 									получить займ в Cash-U под залог или без залога
 								</p>
-								<a class="organization__link" href="#"> Онлайн-заявка </a>
+								<a class="organization__link modal__btn" href="#">
+									Онлайн-заявка
+								</a>
 							</div>
 							<div class="organization__table table">
 								<div class="table__top">
@@ -177,6 +179,74 @@
 				</section>
 			</main>
 
+			<div class="modal">
+				<div class="modal__bg">
+					<div class="modal__body">
+						<button class="modal__close">
+							<img src="./images/selection/close.svg" alt="close-modal" />
+						</button>
+						<div class="modal__content">
+							<h2 class="modal__title">
+								Отправьте заявку на кредит прямо сейчас
+							</h2>
+							<p class="modal__subtitle">И мы свяжемся с Вами</p>
+							<form class="modal__form" action="#">
+								<div class="modal__form-item">
+									<span>Имя</span>
+									<input class="modal__form-input" type="text" />
+								</div>
+								<div class="modal__form-item">
+									<span>Телефон</span>
+									<input class="modal__form-input" id="phone" type="tel" />
+								</div>
+								<div class="modal__form-item">
+									<span>Сумма</span>
+									<input class="modal__form-input sum" type="text" />
+								</div>
+								<div class="modal__form-item">
+									<span>Город</span>
+									<select class="modal__form-select">
+										<option value="default" selected disabled>
+											Выберите город
+										</option>
+										<option value="tashkent">Ташкент</option>
+										<option value="nukus">Нукус</option>
+										<option value="andijan">Андижан</option>
+										<option value="buxara">Бухара</option>
+										<option value="djizak">Джизак</option>
+										<option value="karshi">Карши</option>
+										<option value="navoi">Навои</option>
+										<option value="samarkand">Самарканд</option>
+										<option value="termez">Термез</option>
+										<option value="gulistan">Гулистан</option>
+										<option value="nurafshan">Нурафшан</option>
+										<option value="fergana">Фергана</option>
+										<option value="urgench">Ургенч</option>
+									</select>
+								</div>
+								<div class="modal__form-item">
+									<span>Обеспечение</span>
+									<select class="modal__form-select">
+										<option value="default" selected disabled>
+											Обеспечение
+										</option>
+										<option value="bez-obespechenie">Без обечпечение</option>
+										<option value="avtomobil">Автомобиль</option>
+										<option value="noutbuk">Ноутбук</option>
+										<option value="kvartira">Квартира</option>
+										<option value="zoloto">Золото</option>
+										<option value="net-zaloga">Нет залога</option>
+									</select>
+								</div>
+								<button class="modal__form-btn" type="submit">
+									Отправить заявку
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<footer class="footer">
 				<div class="container">
 					<div class="footer__items">
@@ -242,6 +312,10 @@
 				</div>
 			</footer>
 		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="./js/jquery.maskedinput.min.js"></script>
+		<script src="./js/imask.js"></script>
 		<script src="./js/script.js"></script>
 	</body>
 </html>

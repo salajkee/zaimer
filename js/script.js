@@ -248,7 +248,7 @@ try {
 
 // Modal
 try {
-	const offerBtns = document.querySelectorAll('.offer__item-btn')
+	const modalBtns = document.querySelectorAll('.modal__btn')
 	const modal = document.querySelector('.modal')
 	const modalClose = document.querySelector('.modal__close')
 
@@ -262,7 +262,7 @@ try {
 		document.body.classList.remove('no-scroll')
 	}
 
-	offerBtns.forEach(btn => {
+	modalBtns.forEach(btn => {
 		btn.addEventListener('click', e => {
 			e.preventDefault()
 			openModal()
@@ -270,4 +270,79 @@ try {
 	})
 
 	modalClose.addEventListener('click', closeModal)
+} catch (e) {}
+
+// Input mask
+try {
+	const sum = document.querySelectorAll('.sum')
+
+	sum.forEach(item => {
+		let sum1 = new IMask(item, {
+			mask: Number,
+			min: 500000,
+			max: 500000000,
+			thousandsSeparator: ' ',
+		})
+	})
+} catch (e) {}
+
+// Input mask tel
+try {
+	$(document).ready(function () {
+		$('input[id^="phone"]').mask('+998 (XX) XXX-XX-XX')
+	})
+} catch (e) {}
+
+// Calculator
+try {
+	const calc = document.querySelector('.selection__calc')
+	const sum = calc.querySelector('.calc__form-sum')
+	const period = calc.querySelector('.calc__form-period')
+	const select = calc.querySelector('.calc__form-select')
+	const percent = calc.querySelector('.calc__form-percent')
+	const btn = calc.querySelector('.calc__form-btn')
+	const result = calc.querySelector('.calc__result')
+	const resultSpan = result.querySelector('span')
+
+	btn.addEventListener('click', () => {
+		let sumValue = sum.value.split(' ').join('')
+		let periodValue
+
+		if (sumValue >= 400000 && period.value !== '' && percent.value > 0) {
+			if (select.value == 'days') {
+				periodValue = period.value
+			} else if (select.value == 'weeks') {
+				periodValue = period.value * 7
+			} else if (select.value == 'months') {
+				periodValue = period.value * 30
+			}
+
+			let resultValue = Math.ceil(
+				(percent.value / 100 / 365) * sumValue * periodValue
+			).toLocaleString('ru')
+
+			resultSpan.textContent = resultValue
+			result.classList.add('calc__result--active')
+		}
+	})
+} catch (e) {}
+
+// Count animation
+try {
+	const valueDisplays = document.querySelectorAll('.num')
+	const interval = 3000
+
+	valueDisplays.forEach(valueDisplay => {
+		let startValue = 0
+		let endValue = parseInt(valueDisplay.getAttribute('data-val'))
+
+		let duration = Math.floor(interval / endValue)
+		let counter = setInterval(() => {
+			startValue += 1
+			valueDisplay.textContent = startValue
+			if (startValue == endValue) {
+				clearInterval(counter)
+			}
+		}, duration)
+	})
 } catch (e) {}
